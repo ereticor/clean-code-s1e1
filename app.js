@@ -84,7 +84,7 @@ var editTask=function(){
   var editInput=listItem.querySelector(".text-input");
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
-  var containsClass=listItem.classList.contains("editMode");
+  var containsClass=listItem.classList.contains("edit-mode");
   //If class of the parent is .editmode
   if(containsClass){
 
