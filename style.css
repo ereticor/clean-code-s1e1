@@ -24,7 +24,7 @@
   }
 
 }
-.main-page {
+.page__main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.add-item__wrapper {
   display: flex;
 }
 ul {
@@ -49,7 +49,7 @@ input,
 button {
   outline: none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -58,7 +58,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -72,7 +72,7 @@ label[for="new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-.text-input {
+.add-item__text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -84,7 +84,7 @@ label[for="new-task"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.text-input:focus {
+.add-item__text-input:focus {
   color: #333;
 }
 
@@ -96,12 +96,12 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-.task-row-wrapper button:hover {
+.add-item__wrapper .btn:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-.list-item {
+.task-holder__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -110,31 +110,31 @@ label[for="new-task"] {
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.task-holder__list-item > * {
   vertical-align: middle;
 }
 
-.list-item > .checkbox-input {
+.task-holder__list-item > .list-item__checkbox {
   margin: 0 10px;
 }
-.list-item > label {
+.task-holder__list-item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item > .text-input {
+.task-holder__list-item > .add-item__text-input {
   width: 226px;
 }
-.list-item > .delete:hover {
+.task-holder__list-item > .list-item__delete-btn:hover {
   color: #cf2323;
 }
-.delete .delete-img {
+.list-item__delete-btn .delete-btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete .delete-img:hover {
+.list-item__delete-btn .delete-btn__img:hover {
   transform: rotateZ(0);
 }
 
@@ -145,15 +145,15 @@ label[for="new-task"] {
 }
 
 /* Edit Task */
-.task-holder .list-item .text-input {
+.added-list__task-holder .task-holder__list-item .add-item__text-input {
   display: none;
 }
 
-.task-holder .edit-mode .text-input {
+.added-list__task-holder .list-item_edit-mode .add-item__text-input {
   display: inline-block;
   width: 224px;
 }
 
-.task-holder .edit-mode label {
+.added-list__task-holder .list-item_edit-mode label {
   display: none;
 }
