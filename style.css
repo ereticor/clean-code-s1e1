@@ -120,7 +120,7 @@ label[for="new-task"] {
 .task-holder__list-item > .list-item__checkbox {
   margin: 0 10px;
 }
-.task-holder__list-item > label {
+.task-holder__list-item > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -142,7 +142,7 @@ label[for="new-task"] {
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
@@ -157,6 +157,6 @@ label[for="new-task"] {
   width: 224px;
 }
 
-.added-list__task-holder .list-item_edit-mode label {
+.added-list__task-holder .list-item_edit-mode .task {
   display: none;
 }
