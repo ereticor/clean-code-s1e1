@@ -96,7 +96,7 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.add-item__wrapper .task.add-item__text-input {
   width: 318px;
 }
 .add-item__wrapper .btn:hover {
