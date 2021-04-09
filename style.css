@@ -142,7 +142,7 @@ label[for="new-task"] {
 }
 
 /* Completed */
-#completed-tasks .task {
+.added-list__task-holder .task {
   text-decoration: line-through;
   color: #888;
 }
